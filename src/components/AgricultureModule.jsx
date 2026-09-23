@@ -83,9 +83,10 @@ export function AgricultureModule({ agriInputs, setAgriInputs, agriResults, setA
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full text-slate-200">
+    <div className="space-y-8 animate-in fade-in duration-500">
       
-      {/* INPUT PANEL */}
+      {/* Main Grid Container */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full text-slate-200">
       <div className="lg:col-span-5 bg-[#16202c]/90 border border-slate-800 rounded-3xl p-6 backdrop-blur-xl shadow-2xl flex flex-col gap-6">
         <div className="flex items-center gap-3 border-b border-slate-700/50 pb-4">
           <div className="p-2 bg-emerald-500/20 rounded-xl">
