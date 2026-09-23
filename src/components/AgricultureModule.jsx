@@ -417,9 +417,10 @@ export function AgricultureModule({ agriInputs, setAgriInputs, agriResults, setA
                   ))}
                 </div>
               </div>
+            )}
+          </div>
         </div>
       </div>
-    </div>
 
     {/* GENERATE REPORT ACTION */}
     <div className="flex justify-end mt-8">
