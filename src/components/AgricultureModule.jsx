@@ -417,8 +417,6 @@ export function AgricultureModule({ agriInputs, setAgriInputs, agriResults, setA
                   ))}
                 </div>
               </div>
-            )}
-          </div>
         </div>
 
       </div>
@@ -434,6 +432,7 @@ export function AgricultureModule({ agriInputs, setAgriInputs, agriResults, setA
           <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </button>
       </div>
+
     </div>
   );
 }
