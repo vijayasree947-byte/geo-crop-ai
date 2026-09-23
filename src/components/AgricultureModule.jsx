@@ -418,21 +418,21 @@ export function AgricultureModule({ agriInputs, setAgriInputs, agriResults, setA
                 </div>
               </div>
         </div>
-
       </div>
-
-      {/* GENERATE REPORT ACTION */}
-      <div className="flex justify-end mt-8">
-        <button
-          onClick={() => setActiveTab('report-agri')}
-          className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold px-6 py-4 rounded-2xl shadow-xl shadow-amber-900/20 transition-all duration-300 group"
-        >
-          <HelpCircle className="w-5 h-5 hidden" />
-          <span>{lang === 'ta' ? 'அதிகாரப்பூர்வ அறிக்கை உருவாக்கு' : 'Generate Official PDF Report'}</span>
-          <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-        </button>
-      </div>
-
     </div>
+
+    {/* GENERATE REPORT ACTION */}
+    <div className="flex justify-end mt-8">
+      <button
+        onClick={() => setActiveTab('report-agri')}
+        className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold px-6 py-4 rounded-2xl shadow-xl shadow-amber-900/20 transition-all duration-300 group"
+      >
+        <HelpCircle className="w-5 h-5 hidden" />
+        <span>{lang === 'ta' ? 'அதிகாரப்பூர்வ அறிக்கை உருவாக்கு' : 'Generate Official PDF Report'}</span>
+        <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+      </button>
+    </div>
+
+  </div>
   );
 }
