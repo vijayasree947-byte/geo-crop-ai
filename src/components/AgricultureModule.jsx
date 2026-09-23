@@ -83,10 +83,9 @@ export function AgricultureModule({ agriInputs, setAgriInputs, agriResults, setA
   };
 
   return (
-    <div className="space-y-8 animate-in fade-in duration-500">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full text-slate-200">
       
-      {/* Main Grid Container */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full text-slate-200">
+      {/* INPUT PANEL */}
       <div className="lg:col-span-5 bg-[#16202c]/90 border border-slate-800 rounded-3xl p-6 backdrop-blur-xl shadow-2xl flex flex-col gap-6">
         <div className="flex items-center gap-3 border-b border-slate-700/50 pb-4">
           <div className="p-2 bg-emerald-500/20 rounded-xl">
@@ -420,20 +419,20 @@ export function AgricultureModule({ agriInputs, setAgriInputs, agriResults, setA
             )}
           </div>
         </div>
+
       </div>
 
-    {/* GENERATE REPORT ACTION */}
-    <div className="flex justify-end mt-8">
-      <button
-        onClick={() => setActiveTab('report-agri')}
-        className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold px-6 py-4 rounded-2xl shadow-xl shadow-amber-900/20 transition-all duration-300 group"
-      >
-        <HelpCircle className="w-5 h-5 hidden" />
-        <span>{lang === 'ta' ? 'அதிகாரப்பூர்வ அறிக்கை உருவாக்கு' : 'Generate Official PDF Report'}</span>
-        <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-      </button>
+      {/* GENERATE REPORT ACTION */}
+      <div className="flex justify-end mt-8">
+        <button
+          onClick={() => setActiveTab('report-agri')}
+          className="flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold px-6 py-4 rounded-2xl shadow-xl shadow-amber-900/20 transition-all duration-300 group"
+        >
+          <HelpCircle className="w-5 h-5 hidden" />
+          <span>{lang === 'ta' ? 'அதிகாரப்பூர்வ அறிக்கை உருவாக்கு' : 'Generate Official PDF Report'}</span>
+          <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+        </button>
+      </div>
     </div>
-
-  </div>
   );
 }
